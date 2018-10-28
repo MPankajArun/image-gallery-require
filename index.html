@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Flickr Image Gallery - Require.js</title>
+  <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+  <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/myGridSystem.css">
+</head>
+<body>
+  <header class="container-full">
+      <div id='search-box' class="container-full center">
+          <h1 class="center"><span style="color:blue;">Flick<span style="color:rgb(201, 6, 175);">r</span></span> Image Gallery</h1>
+          <!-- search form -->
+          <input id="term" type="text" class="search block" placeholder="Enter search term ..." />
+          
+      </div>
+  </header>
+
+  <!-- Begin Body -->
+  <div class="container" style="margin-top:6%;">
+    <section id="thumbnails" class="grid">
+      <script type="text/template" id="thumbnail-tpl">
+       <a href="<%= link %>" title="<%= title %>" data-gallery class="grid-box block pointer">
+         <img src="<%= imgUrl %>" style="margin-top:5px;pading:10px;"/>
+       </a>
+      </script>
+    </section>
+  </div>
+
+  <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+  <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false">
+      <!-- The container for the modal slides -->
+      <div class="slides"></div>
+      <!-- Controls for the borderless lightbox -->
+      <h3 class="title"></h3>
+      <!--script type="text/template" id="photoinfo-tpl">-->
+      <a href="#" target="_blank" class="author"></a>
+      <!-- </script> -->
+      <a class="prev">‹</a>
+      <a class="next">›</a>
+      <a class="close">×</a>
+      <a class="play-pause"></a>
+      <a class="btn btn-default views">
+         <span class="glyphicon glyphicon-eye-open"></span>
+         <span class="vnumber"></span>
+      </a>
+      <ol class="indicator"></ol>
+      <!-- The modal dialog, which will be used to wrap the lightbox content -->
+  </div>
+
+
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.0.min.js"></script>
+  <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+  <script src="js/lib/bootstrap-image-gallery.min.js"></script>
+  <script data-main="js/config" src="js/lib/require.js"></script>
+  <script type="text/javascript">
+
+  </script>
+</body>
+</html>

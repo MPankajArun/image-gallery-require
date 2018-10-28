@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(253, 252, 252);
+    padding-top: 65px; /* make some space with fixed top navbar */
+}
+
+.ajax-mask {
+  background: #333;
+  opacity: 0.8;
+  z-index: 10000;
+}
+.ajax-mask .loading {
+  width: 130px;
+  height: 130px;
+  background: #343838 url('../images/loading.gif') center center no-repeat;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  position: fixed; /* put loading in the center of the screen instead of document*/
+  left:50%;
+  margin-left:-25px;
+  top:50%;
+  margin-top: -25px;
+  opacity: 0.6;
+  -moz-opacity: 0.9;
+}
+
+/* #thumbnails img {
+    float: left; /* remove space between images 
+} */
+#blueimp-gallery .author {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: #555;
+    margin-top: 15px;
+}
+#blueimp-gallery .views {
+    position: absolute;
+    bottom: 8px;
+    right: 60px;
+    border-color: black;
+    background-color: black;
+    color: #fff;
+}
+#blueimp-gallery .vnumber {
+    margin-left: 5px;
+}
+
+.spinner, .load-more {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin: 20px;
+}
+
+header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1em;
+    z-index: 2;
+  }
+  
+  ::-webkit-input-placeholder {
+    color:rgb(172, 170, 170);
+  }
+  .search {
+    width: 67vw;
+    margin: 0 auto;
+    padding: 0.5em;
+    left:15%;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    background: #eee;
+    color: #C8C8C8;
+    border: 4px #000;
+    border-style: none none solid none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .search:focus {
+    outline: none;
+    box-shadow: none;
+    border: 4px blue;
+    border-style: none none solid none;
+    color: #000;
+  }
+  
+  ::-webkit-input-placeholder {
+     color: #C8C8C8;
+  }
+
+
+.grid {
+    display: flex;
+    top:100px;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
